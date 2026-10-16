@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin: 2em;
+}
+.centered-section {
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: left;
+  padding: 0 1em;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+/*.main-heading {
+  text-align: center;
+  font-size: 3em;
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+}*/
+.main-heading {
+  text-align: center;
+  margin: 1.5em 0 1em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+.name-image {
+  width: 500px;        /* or whatever size you want */
+  height: auto;        /* maintains aspect ratio */
+  display: block;
+  margin: 0 auto;      /* centers the image */
+}
+.about-container {
+  display: flex;
+  align-items: center;     /* <-- Vertically center image and text */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;         /* <-- Allows stacking on small screens */
+  margin: 2em 0;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* <-- Vertically center heading and paragraphs */
+}
+
+.about-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.container {
+    width: 100%;
+   margin: 0 auto;
+    text-align: center;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white; /* or your page’s background */
+  z-index: 1000; /* ensures it stays above other content */
+  padding: 0.5em 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc; /* optional: visual separation */
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.pub-list {
+  list-style-type: circle;
+}
+
+summary {
+  cursor: pointer;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+.expand-hint {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-left: 0.5em;
+}
+
+#experience details:first-of-type {
+  margin-top: 1em; /* or 1.5em, adjust as needed */
+}
+
+#experience details {
+  margin-left: 1.5em; /* adjust to match your bullet indent */
+  margin-bottom: 1.2em;
+}
+
+#experience summary {
+  color: #999;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.2em 0;
+}
+
+#experience details p {
+  margin: 0.5em 0 0 1.5em; /* indent paragraph to align under summary */
+}
+
+#publications a:link {color: #0c68c9;}
+
+/*#about a:link {color: #0c68c9; font-weight:bold;}*/
+#about a:link {color: #0c68c9;}
+
+#awards a:link {color: #0c68c9;}
+
+#misc a:link {color: #0c68c9;}
+
+#patents a:link {color: #0c68c9;}
+
+#elsewhere ul{
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+}
+#elsewhere ul li {
+    display: inline;
+    font-size: 1em;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.section {
+  border-bottom: 1px solid #999;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: lighter;
+}
+h2 {
+    font-size: 2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align: center;
+    font-weight: lighter;
+
+}
+h3 {
+    font-size: 1em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: #757575;
+}
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #999;
+    font-weight: lighter;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+.description {
+
+}
+img {
+  border-radius: 10%;
+}
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
